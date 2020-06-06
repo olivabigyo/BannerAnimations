@@ -45,12 +45,17 @@ body {
 }
 
 .bottom-section {
-    background-color: #91C11E;
     bottom: 20px;
     right: -350px;
 }
+.bottom-section .bBackground {
+    width: 450px;
+    height: 150px;
+    background: linear-gradient(to right, transparent, #91C11E, #91C11E, #91C11E);
+    position: relative;
+}
 
-.inhalt {
+.content {
     min-height: 150px;
     display: flex;
     flex-direction: column;
@@ -73,18 +78,18 @@ h2 {
     font-weight: 300;
 }
 
-.inhalt p {
+.content p {
     padding: 1rem 0.5rem;
     visibility: hidden;
 }
-.inhalt:hover {
+.content:hover {
     background-image: unset;
     background-color: #91C11E;
 }
-.inhalt:hover p {
+.content:hover p {
     visibility: visible;
 }
-.inhalt:hover h3 {
+.content:hover h3 {
     visibility: hidden;
 }
 
@@ -115,7 +120,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: -350px;
+    left: -450px;
 }
 
 .bottom-section ul {
