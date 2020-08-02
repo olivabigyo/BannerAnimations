@@ -76,8 +76,9 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
 } */
 .card {
     /* harommal keskenyebb */
-    width: 252px;
-    height: 166px;
+    width: 255px;
+    height: 169px;
+    border: 2px solid #005AA3;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -88,28 +89,28 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     display: none;
 }
 .cardoverlay1 {
-    top: 150px;
-    left: 423px;
+    top: 148px;
+    left: 420px;
 }
 
 .cardoverlay2 {
-    top: 150px;
-    left: 695px;
+    top: 148px;
+    left: 692px;
 }
 
 .cardoverlay3 {
-    top: 332px;
-    left: 152px;
+    top: 330px;
+    left: 150px;
 }
 
 .cardoverlay4 {
-    top: 332px;
-    left: 423px;
+    top: 330px;
+    left: 420px;
 }
 
 .cardoverlay5 {
-    top: 332px;
-    left: 695px;
+    top: 330px;
+    left: 692px;
 }
 
 .card a {

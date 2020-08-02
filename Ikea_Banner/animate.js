@@ -1,15 +1,16 @@
 const tl = new gsap.timeline();
 const tl2 = new gsap.timeline();
 
-tl2.set('.marker', { y: -610 })
-tl2.set('.house_part', { y: 800 })
-tl2.set('#swiss_map', { visibility: 'hidden' })
-// tl2.set('#house', { visibility: 'hidden' })
-tl2.set('#sofa', { visibility: 'hidden', scale: 0.25})
-tl2.set('#workstation', { visibility: 'hidden' })
-tl2.set('.logo', { visibility: 'hidden', scale: 0.8 })
-tl2.set('#browser', { visibility: 'hidden' })
-tl.from('.cube_viewport', { y: -600, duration: 2, ease: 'elastic.out(1, 0.3)' })
+tl.set('.marker', { y: -610 })
+    .set('.house_part', { y: 800 })
+    .set('#swiss_map', { visibility: 'hidden' })
+    // .set('#house', { visibility: 'hidden' })
+    .set('#sofa', { visibility: 'hidden', scale: 0.25})
+    .set('#workstation', { visibility: 'hidden' })
+    .set('.logo', { visibility: 'hidden', scale: 0.8 })
+    // .set('#browser', { visibility: 'hidden', scale: 0.1 })
+    .set('#browser', {display:'none' })
+    .from('.cube_viewport', { y: -600, duration: 2, ease: 'elastic.out(1, 0.3)' })
     .to('.cube', {
         rotationY: -65, stagger: {
             each: 0.1,
@@ -68,10 +69,11 @@ tl.from('.cube_viewport', { y: -600, duration: 2, ease: 'elastic.out(1, 0.3)' })
       })
     .to('.text1', {autoAlpha:0, duration: 0.1, delay: -0.1})
     // Logo animation
-    .to('.logo', {autoAlpha:1, scale: 1, ease: "back.out(3)", duration: 1})
+    .to('.logo', {autoAlpha:1, scale: 1.5, ease: "back.out(3)", duration: 1})
     .to('#computer', {autoAlpha:0, duration: 0.1, delay: 0.5})
     .to('.logo', {autoAlpha:0, duration: 0.1})
-    .to('#browser', {autoAlpha:1, duration: 1})
+    .set('#browser', {display:'block', visibility: 'hidden', scale: 0.1 })
+    .to('#browser', {autoAlpha:1, scale: 1, duration: 1})
     .to('.text2', {
         text:"Entdecke die IKEA Welt",
         duration: 2, 
