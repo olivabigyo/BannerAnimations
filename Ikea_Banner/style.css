@@ -6,10 +6,7 @@
 .container {
     height: 648px;
     width: 1152px;
-    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(images/bg.jpg) no-repeat; */
-    /* background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)); */
     background: linear-gradient(rgba(218, 218, 218, 0.1), rgba(218, 218, 218, 0.3));
-    /* background-size: cover; */
     margin: 50px auto;
     font-family: 'Noto Sans', sans-serif;
     overflow: hidden;
@@ -59,23 +56,14 @@
     top: 0;
 }
 
-/* rect#card2:hover {
-    fill: #005aa34b;
-} */
 g {
     pointer-events: bounding-box;
 }
-g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
-    /* fill: #005AA3; */
+/* g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     opacity: 0.5;
-}
-
-/* svg#browser:hover {
-    stroke: black;
-    fill:yellow;
 } */
-.card {
-    /* harommal keskenyebb */
+
+.cardoverlay {
     width: 255px;
     height: 169px;
     border: 2px solid #005AA3;
@@ -113,7 +101,7 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     left: 692px;
 }
 
-.card a {
+.cardoverlay a {
     padding: 1rem 2rem;
     background-color: #005AA3;
     text-decoration: none;
@@ -150,17 +138,8 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     position: relative;
 }
 
-.cube-1 {
-    /* transition: transform .4s; */
-}
-
 .cube-2 {
     z-index: 10;
-    /* transition: transform .4s .2s; */
-}
-
-.cube-3 {
-    /* transition: transform .4s .4s; */
 }
 
 .face {
@@ -185,40 +164,10 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     background-color: #005AA3;
 }
 
-/* .cube-1 .front {
-    background: url(images/slide-img-1.jpg) no-repeat 50% 0;
-    background-size: cover;
-}
-
-.cube-2 .front {
-    background: url(images/slide-img-1.jpg) no-repeat 50% -7vw;
-    background-size: cover;
-}
-
-.cube-3 .front {
-    background: url(images/slide-img-1.jpg) no-repeat 50% -14vw;
-    background-size: cover;
-} */
-
 .back {
     transform: translateZ(-200px) rotateY(180deg);
     background-color: gray;
 }
-
-/* .cube-1 .back {
-    background: url(images/slide-img-3.jpg) no-repeat 50% 0;
-    background-size: cover;
-}
-
-.cube-2 .back {
-    background: url(images/slide-img-3.jpg) no-repeat 50% -7vw;
-    background-size: cover;
-}
-
-.cube-3 .back {
-    background: url(images/slide-img-3.jpg) no-repeat 50% -14vw;
-    background-size: cover;
-} */
 
 .right {
     transform: translateX(200px) rotateY(90deg);
@@ -234,40 +183,10 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     width: 60%;
 }
 
-/* .cube-1 .right {
-    background: url(images/slide-img-2.jpg) no-repeat 50% 0;
-    background-size: cover;
-}
-
-.cube-2 .right {
-    background: url(images/slide-img-2.jpg) no-repeat 50% -7vw;
-    background-size: cover;
-}
-
-.cube-3 .right {
-    background: url(images/slide-img-2.jpg) no-repeat 50% -14vw;
-    background-size: cover;
-} */
-
 .left {
     transform: translateX(-200px) rotateY(270deg);
     background-color: gray;
 }
-/* 
-.cube-1 .left {
-    background: url(images/slide-img-4.jpg) no-repeat 50% 0;
-    background-size: cover;
-}
-
-.cube-2 .left {
-    background: url(images/slide-img-4.jpg) no-repeat 50% -7vw;
-    background-size: cover;
-}
-
-.cube-3 .left {
-    background: url(images/slide-img-4.jpg) no-repeat 50% -14vw;
-    background-size: cover;
-} */
 
 .top {
     height: 400px;
@@ -280,42 +199,3 @@ g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
     background-color: #111;
     transform: translateY(-200px) rotateX(-90deg);
 }
-
-/* .control {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 50%;
-    background-color: rgba(59, 52, 50, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    z-index: 100;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.control:hover {
-    background-color: rgba(42, 38, 36, 0.8);   
-}
-
-.control i {
-    pointer-events: none;
-}
-
-.left-arrow {
-    top: 50%;
-    left: -35%;
-}
-
-.right-arrow {
-    top: 50%;
-    left: 135%;
-}
-
-.play-pause {
-    top: 140%;
-    left:120%
-} */

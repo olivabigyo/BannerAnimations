@@ -35,9 +35,6 @@ tl.set('.marker', { y: -610 })
             ease: "none"
         }, delay: 1
     })
-
-    // .to('.cube_viewport',{rotate: -100, x: -500, y: -400, scale:0.2, autoAlpha:0, duration: 1.5, delay:1})
-    // .to('#swiss_map',{rotate: 100, x: 400, y: -800, scale:0.2, autoAlpha:0, duration: 1.5, delay:-1.5})
     .to('.cube_viewport',{x: -500, autoAlpha:0, duration: 1, delay:0.5})
     .to('#swiss_map',{x: 500, autoAlpha:0, duration: 1, delay:-1})
     .to('.house_part', { y: 0, duration: 1, delay: -1, stagger: { amount: 0.8 }, ease: 'back.out(1.5)' })
