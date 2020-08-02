@@ -73,7 +73,7 @@ tl.set('.marker', { y: -610 })
     .to('#computer', {autoAlpha:0, duration: 0.1, delay: 0.5})
     .to('.logo', {autoAlpha:0, duration: 0.1})
     .set('#browser', {display:'block', visibility: 'hidden', scale: 0.1 })
-    .to('#browser', {autoAlpha:1, scale: 1, duration: 1})
+    .to('#browser', {autoAlpha:1, scale: 1, duration: 0.5})
     .to('.text2', {
         text:"Entdecke die IKEA Welt",
         duration: 2, 
