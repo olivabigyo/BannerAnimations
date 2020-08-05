@@ -32,7 +32,7 @@
 .card0 {
     position: absolute;
     top: 150px;
-    left: 155px;
+    left: 150px;
     width: 250px;
     padding: 2rem 1rem;
 }
@@ -77,18 +77,18 @@ g {
     display: none;
 }
 .cardoverlay1 {
-    top: 148px;
+    top: 147px;
     left: 420px;
 }
 
 .cardoverlay2 {
-    top: 148px;
+    top: 147px;
     left: 692px;
 }
 
 .cardoverlay3 {
     top: 330px;
-    left: 150px;
+    left: 148px;
 }
 
 .cardoverlay4 {
@@ -106,6 +106,7 @@ g {
     background-color: #005AA3;
     text-decoration: none;
     color: #ffdd00;
+    font-weight: 700;
     cursor: pointer;
 }
 
