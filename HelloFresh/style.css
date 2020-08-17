@@ -1,7 +1,9 @@
+/* Setup */
 * {
     margin: 0;
     padding: 0;
 }
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -9,10 +11,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background-color: #f0f0f0;
 }
 
+/* Banner container */
 .container {
-    margin: 50px;
+    margin: 40px;
     width: 400px;
     height: 650px;
     overflow: hidden;
@@ -21,40 +25,54 @@ body {
     background-color: #fff;
 }
 
-.section, .bottom-section {
+/*  Scene 1  */
+/* ********* */
+
+/* Cards in Scene 1 */
+.card, .bottom-card {
     width: 350px;
     height: 150px;
     overflow: hidden;
     position: absolute;
 }
-.first-section {
+
+.first-card {
     background-color: #91C11E;
     top: 50px;
     left: -350px;
 }
-.second-section {
+
+.second-card {
     background-color: #91C11E;
     top: 170px;
     right: -350px;
 }
 
-.third-section {
+.third-card {
     background-color: #91C11E;
     top: 290px;
     left: -350px;
 }
 
-.bottom-section {
+.bottom-card {
     bottom: 20px;
     right: -350px;
 }
-.bottom-section .bBackground {
-    width: 450px;
-    height: 150px;
-    background: linear-gradient(to right, transparent, #91C11E, #91C11E, #91C11E);
-    position: relative;
+
+.card h3 {
+    padding: 1rem;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    align-self: center; 
 }
 
+.bottom-card h2 {
+    padding: 1rem;
+    font-weight: 300;
+}
+
+/* info text container in cards*/
 .content {
     min-height: 150px;
     display: flex;
@@ -64,56 +82,55 @@ body {
     position: relative;
 }
 
-h3 {
-    padding: 1rem;
-    color: black;
-    position: absolute;
-    bottom: 0;
-    align-self: center;
-    font-weight: 300;
-}
-
-h2 {
-    padding: 1rem;
-    font-weight: 300;
-}
-
 .content p {
     padding: 1rem 0.5rem;
     visibility: hidden;
 }
+
 .content:hover {
     background-image: unset;
     background-color: #91C11E;
 }
+
 .content:hover p {
     visibility: visible;
 }
+
 .content:hover h3 {
     visibility: hidden;
 }
 
-.img1-container {
+/* image backgrounds before infotext visible */
+
+.img1 {
     position: relative;
     background-image: url(images/italian-cuisine-2378729_1280.jpg);
     background-size: cover;
     background-position: bottom;
 }
 
-.img2-container {
+.img2 {
     position: relative;
     background-image: url(images/asparagus-2169305_1280.jpg);
     background-size: 100%;
     background-position: top;
 }
 
-.img3-container {
+.img3 {
     position: relative;
     background-image: url(images/eat-2834549_1280.jpg);
     background-size: 100%;
     background-position: top;
 }
 
+/* bottom-card has no img background, but a wide gradient */
+.bottom-card .gradientBG {
+    width: 450px;
+    height: 150px;
+    background: linear-gradient(to right, transparent, #91C11E, #91C11E, #91C11E);
+    position: relative;
+}
+/* bottom-card has visible info-text */
 .text-container {
     width: 350px;
     display: flex;
@@ -123,16 +140,20 @@ h2 {
     left: -450px;
 }
 
-.bottom-section ul {
+.bottom-card ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: 15px;
 }
-ul li {
+
+.bottom-card ul li {
     width: 35%;
     color: #fff;
 }
+
+/* Scene 2: CTA and logo */
+/* ********************* */
 
 .cta-button {
     width: 200px;
@@ -165,7 +186,7 @@ ul li {
 #logo img {
     width: 100%;
 }
-
+/* for shiny logo animation */
 #logo .shine {
     content: '';
     width: 100%;
