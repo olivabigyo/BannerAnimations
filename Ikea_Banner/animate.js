@@ -9,6 +9,7 @@ tl.set('.marker', { y: -610 })
     .set('.logo', { visibility: 'hidden', scale: 0.8 }) 
     .set('#browser', {display:'none' })
 // Phase 1
+// ikea buliding as a cube and swiss map with markers
     .from('.cube_viewport', { y: -600, duration: 2, ease: 'elastic.out(1, 0.3)' })
     .to('.cube', {
         rotationY: -65, stagger: {
@@ -35,6 +36,7 @@ tl.set('.marker', { y: -610 })
         }, delay: 1
     })
 // Phase 2 Part 1
+// house and sofa
     .to('.cube_viewport',{x: -500, autoAlpha:0, duration: 1, delay:0.5})
     .to('#swiss_map',{x: 500, autoAlpha:0, duration: 1, delay:-1})
     .to('.house_part', { y: 0, duration: 1, delay: -1, stagger: { amount: 0.8 }, ease: 'back.out(1.5)' })
@@ -44,6 +46,7 @@ tl.set('.marker', { y: -610 })
     .to('#house', {autoAlpha:0, duration: 0.4})
     .to('#sofa', {scale:1, ease: "back.out(1.7)", duration: 1.5, delay: -0.4})
 // Phase 2 Part 2
+// workstation and computer
     .to('#sofa', {x: -1150, duration: 2})
     .fromTo('#workstation', {x:1100, y:-50}, {y:0, x:0, autoAlpha:1, duration: 2, delay:-2})
     .fromTo('#chair', {x:150}, {x:0, duration: 2, delay:-1.5})
@@ -55,6 +58,7 @@ tl.set('.marker', { y: -610 })
     .to('.not_computer', {autoAlpha:0, duration: 0.6, delay:-1})
     .to('#screen', {fill: 'white', duration: 0.2})
 // Phase 2 Part 3
+// computer screen
     .to('.text1', {
         text:"www.ikea.ch",
         duration: 2, 
@@ -66,6 +70,7 @@ tl.set('.marker', { y: -610 })
     .to('#computer', {autoAlpha:0, duration: 0.1, delay: 0.5})
     .to('.logo', {autoAlpha:0, duration: 0.1})
 // Phase 3
+// browser and text plugin
     .set('#browser', {display:'block', visibility: 'hidden', scale: 0.1 })
     .to('#browser', {autoAlpha:1, scale: 1, duration: 0.4})
     .to('.text2', {

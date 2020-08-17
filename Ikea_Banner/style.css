@@ -1,3 +1,7 @@
+/* ------- */
+/*  Setup  */
+/* ------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,103 +16,10 @@
     overflow: hidden;
     position: relative;
 }
-.url {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 40%;
-    transform: translate(-50%, -50%);
-}
-.text1 {
-    font-size: 70px;
-}
-.logo {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 285px;
-    transform: translate(-50%, -50%);
-}
-.card0 {
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    width: 250px;
-    padding: 2rem 1rem;
-}
-.text2, .text3 {
-    color: #005AA3;
-    font-size: 1.2rem;
-}
 
-
-#swiss_map {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    width: 40%;
-    transform: translate(-50%, -50%);
-}
-
-#house, #sofa, #workstation, #browser {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-g {
-    pointer-events: bounding-box;
-}
-/* g#work:hover, g#table:hover, g#bedroom:hover, g#kids:hover, g#kitchen:hover {
-    opacity: 0.5;
-} */
-
-.cardoverlay {
-    width: 255px;
-    height: 169px;
-    border: 2px solid #005AA3;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: #005AA3;
-    background-color: #eee;
-    display: none;
-}
-.cardoverlay1 {
-    top: 147px;
-    left: 420px;
-}
-
-.cardoverlay2 {
-    top: 147px;
-    left: 692px;
-}
-
-.cardoverlay3 {
-    top: 330px;
-    left: 148px;
-}
-
-.cardoverlay4 {
-    top: 330px;
-    left: 420px;
-}
-
-.cardoverlay5 {
-    top: 330px;
-    left: 692px;
-}
-
-.cardoverlay a {
-    padding: 1rem 2rem;
-    background-color: #005AA3;
-    text-decoration: none;
-    color: #ffdd00;
-    font-weight: 700;
-    cursor: pointer;
-}
+/* ---------------------------------- */
+/* Phase 1: Ikea building as a 'cube' */
+/* ---------------------------------- */
 
 .cube_viewport {
     width: 400px;
@@ -119,7 +30,7 @@ g {
     transform: translate(-50%, -50%);
     perspective: 1300px;
 }
-
+/* shadow of the cube */
 .cube_viewport::after {
     content: '';
     position: absolute;
@@ -175,14 +86,6 @@ g {
     background-color: #005AA3;
 }
 
-.cube-1 .right {
-    display: flex;
-    align-items: center;
-}
-
-.cube-1 .right img {
-    width: 60%;
-}
 
 .left {
     transform: translateX(-200px) rotateY(270deg);
@@ -199,4 +102,131 @@ g {
     height: 400px;
     background-color: #111;
     transform: translateY(-200px) rotateX(-90deg);
+}
+
+/* Ikea logo on the right side  */
+.cube-1 .right {
+    display: flex;
+    align-items: center;
+}
+
+.cube-1 .right img {
+    width: 60%;
+}
+
+/* -------------------------------------- */
+/*  Phase 1: swiss map svg with markers   */
+/* -------------------------------------- */
+
+#swiss_map {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------------------- */
+/*  Phase 2 and 3: svg animations   */
+/* -------------------------------- */
+
+#house, #sofa, #workstation, #browser {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ------------------------------------- */
+/*  Phase 2 Part 3: ikea url and logo    */
+/* ------------------------------------- */
+
+.url {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+}
+.text1 {
+    font-size: 70px;
+}
+.logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 285px;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------- */
+/*  Phase 3: text animation with plugin  */
+/* ------------------------------------- */
+
+
+.card0 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 250px;
+    padding: 2rem 1rem;
+}
+.text2, .text3 {
+    color: #005AA3;
+    font-size: 1.2rem;
+}
+
+/* ----------------------------------- */
+/*      End Phase after anmiation      */
+/*  hover effekt for user interaction  */
+/* ----------------------------------- */
+
+g {
+    pointer-events: bounding-box;
+}
+
+.cardoverlay {
+    width: 255px;
+    height: 169px;
+    border: 2px solid #005AA3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #005AA3;
+    background-color: #eee;
+    display: none;
+}
+.cardoverlay1 {
+    top: 147px;
+    left: 420px;
+}
+
+.cardoverlay2 {
+    top: 147px;
+    left: 692px;
+}
+
+.cardoverlay3 {
+    top: 330px;
+    left: 148px;
+}
+
+.cardoverlay4 {
+    top: 330px;
+    left: 420px;
+}
+
+.cardoverlay5 {
+    top: 330px;
+    left: 692px;
+}
+
+.cardoverlay a {
+    padding: 1rem 2rem;
+    background-color: #005AA3;
+    text-decoration: none;
+    color: #ffdd00;
+    font-weight: 700;
+    cursor: pointer;
 }
